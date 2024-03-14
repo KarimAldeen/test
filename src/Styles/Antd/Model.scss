@@ -1,0 +1,70 @@
+.ant-modal-root .ant-modal-wrap {
+    @include Scrollbar;
+
+
+}
+
+.ant-modal .ant-modal-content{
+    padding: 0;
+    border-radius: 20px;
+    .ant-modal-close{
+        display: none !important; 
+
+    }
+}
+
+.ModalForm {
+    position: relative;
+    
+    header {
+        height: 4vw;
+        background: var(--primary);
+        padding: 1vw;
+            z-index: 10;
+        color: var(--white);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-size: 1.4vw;
+    }
+    .time_main_modal{
+        padding: 3vw 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+       
+    }
+    main{
+        .buttons{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            button{
+                outline: none ;
+                border: none;
+                width: 7vw;
+                border-radius: 70px;
+                padding: .7vw;
+                font-weight: bold;
+                background: var(--primary);
+                color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                
+            }
+}
+    }
+    label{
+        color: var(--secondary) !important;
+    }
+    .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+        border: 1px solid var(--border-color) !important;
+        }   
+}
+
+

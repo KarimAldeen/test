@@ -1,0 +1,66 @@
+.Test {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    background: white;
+}
+
+.Test .Sections {
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Test .Sections .Section {
+    width: 40vw;
+    height: 27vw;
+    padding: 2vw;
+    border: 0.2vw dashed gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Test .Sections .Section > span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Test .Sections .Section > span span {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.Test .Sections .Section > span span h6 {
+    font-weight: bold;
+}
+
+.Test .Sections .Section > span span p {
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+}
+
+.Test .Sections .Section > span span img {
+    width: 9vw;
+}
+
+.Test .Sections .Section > span > div img {
+    width: 15vw;
+}
+
+.Test .Sections .Section > div {
+    text-align: center;
+}
+
+.Test .Sections .Section > div svg {
+    color: rgb(0 210 255);
+    margin-inline: 1vw;
+}

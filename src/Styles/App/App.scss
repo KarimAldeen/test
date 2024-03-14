@@ -1,0 +1,89 @@
+
+html,body {
+    background: var(--bg2);
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    @include Scrollbar()
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 600; 
+    font-size: 1vw;
+
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    // font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
+
+}
+
+button,
+svg {
+    cursor: pointer;
+}
+
+
+
+.not_foound_page{
+    background: black;
+    height: 100vh;
+    display: flex;justify-content: center;align-items:center;
+
+
+    p{
+        color: white;
+        display: inline;
+    
+    }
+    h6{
+        display: inline;
+        margin-inline:20px;
+        height: 140px !important;
+        
+        width: 20px;
+    }
+    .container-not-found{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            display: flex;justify-content: center;align-items: center;
+
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 10px;
+
+            margin-inline:30px;
+        }
+    }
+}
+/* Input */
+.ant-picker-outlined .ant-picker-input input{
+    font-size:1vw;
+   }
+   
+   /* Username */
+   #username{
+    font-size:1vw;
+   }
+   
+   /* Password */
+   #password{
+    font-size:1vw;
+   }
+   
+
+   

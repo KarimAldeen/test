@@ -1,0 +1,18 @@
+.ant-picker-body tr .ant-picker-calendar-date{
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+   }
+
+
+   .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-disabled) .ant-picker-cell-inner{
+    border-radius: 50%;
+    // max-width: 70px;
+
+    &::before{
+        border: none !important;
+        outline: none;
+      
+    }
+   }
+

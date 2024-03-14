@@ -1,0 +1,65 @@
+// Layout  Layout_Body  Layout_Children
+
+
+.Layout{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    &::after{
+        z-index: 1;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        max-height: 130px;
+        height: 20vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../../../public/Layout/Background_Header.svg');
+    }
+}
+
+.Layout_Body{
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    transition: all .6s ease;
+    // min-height: 100vh;
+    position: relative;
+    padding-right: calc(var(--sidebarwidth) + var(--sidebarspace) );
+    padding-top: var(--sidebarspace) ;
+    z-index: 2;
+   
+
+   
+
+}
+
+.Layout_Children{
+    background-color: red;
+    background: var(--bg2);
+    height: 100%;
+    width: 100%;
+}
+.en{
+    .Layout_Body{
+        padding-right: 0 !important;
+        padding-left: calc(var(--sidebarwidth) + var(--sidebarspace) );
+
+    }
+}
+.Layout_Children {
+    >*{
+        display: flex;
+        width: 100%;
+        // min-height: 100vh;
+        // align-self: stretch;
+        padding: 20px;
+    }
+    
+    
+    }

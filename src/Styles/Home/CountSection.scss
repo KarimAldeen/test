@@ -1,0 +1,54 @@
+
+.CountSection{
+    width: 100%;
+    display: flex;
+    background: var(--bg);
+    border-radius:var(--border-radius) ;
+    padding: 10px;
+    .CountCards{
+        display: flex; 
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+    
+.CountCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+
+    h6{
+        color: var(--secondary);
+        font-size: 1vw;
+        font-weight: bold;
+
+    }
+    h4{
+        font-size: 1vw;
+        font-weight: 400;
+        margin-bottom: 0;
+
+    }
+    i{
+        width: 3.6vw;
+        height: 3.6vw;
+        border-radius:50%;
+        background: var(--primary);
+        @include Flex;
+        margin-bottom: 4px;
+        svg{
+            color: var(--white);
+            font-size: 2vw;
+        }
+
+    }
+    }
+  
+    }
+    img{
+        width: 14%;
+        mix-blend-mode: multiply;
+        margin-inline: 2vw;
+    }
+}

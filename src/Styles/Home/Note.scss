@@ -1,0 +1,81 @@
+.NoteSection{
+    background: var(--bg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    header{
+        margin-bottom: 10px;
+        display: flex; align-items: center ; gap: 20px;
+        h4{
+                color: var(--secondary);
+                font-weight: bold;
+        }
+    }
+    .NoteScrollerChanger{
+        background: #F4F7FE;
+        padding: 20px 10px;
+        border-radius: var(--border-radius);
+
+    }
+    .Notes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 20px;
+        max-height: 500px;
+        overflow-y: scroll;
+        @include Scrollbar;
+        direction: ltr; /* Right-to-left direction */
+
+        article{
+            direction: rtl; /* Right-to-left direction */
+
+            display: flex;
+            flex-direction: column;
+            >div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+                i{
+                    width: 1.7vw;
+                    height: 1.7vw;
+                    background: var(--primary);
+                    color: var(--white);
+                    border-radius: 50%;
+                    @include Flex
+                }
+                h5{
+                    margin-bottom: 0;
+                    font-size: 1.2vw;
+                    color: #606165;
+                    font-family: 'Jost-SemiBold', sans-serif; /* Use ABeeZee font for body text */
+
+                }
+
+               
+            }
+            span{
+                margin-right: 50px;
+                font-size: .8vw;
+                width: 90%;
+                position: relative;
+                font-weight: 400;
+                margin-bottom: 10px;
+                &::before {
+                    content: ""; /* Required for ::before pseudo-element */
+                    position: absolute;
+                    top: 5px;
+                    right: -20px;
+                    width: 8px; /* Set width and height to cover the entire parent */
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #606060;
+
+            }
+        }
+        }
+    }
+}

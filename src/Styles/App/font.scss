@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'ABeeZee';
+    src: url('../../font/ABeeZee-Regular.ttf') format('truetype'); /* Specify the path to the font file */
+    /* Add more src declarations for other font weights if needed */
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../font/Poppins-Regular.ttf') format('truetype'); /* Specify the path to the font file */
+    /* Add more src declarations for other font weights if needed */
+}
+@font-face {
+    font-family: 'Poppins_Bold';
+    src: url('../../font/Poppins-Bold.ttf') format('truetype'); /* Specify the path to the font file */
+    /* Add more src declarations for other font weights if needed */
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../../font/Jost-SemiBold.ttf') format('truetype'); /* Specify the path to the font file */
+    /* Add more src declarations for other font weights if needed */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use ABeeZee font for body text */
+}
+
+
+
+@mixin Font_Poppins {    
+    font-family: 'Poppins', sans-serif; /* Use ABeeZee font for body text */
+}
+ 
+@mixin Font_Poppins_Bold {    
+    font-family: 'Poppins-Bold'; /* Use ABeeZee font for body text */
+}
+ 

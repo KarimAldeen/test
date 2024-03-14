@@ -1,0 +1,61 @@
+.ActivitySection{
+    background: var(--bg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    header{
+        margin-bottom: 10px;
+        display: flex; align-items: center ; gap: 20px;
+        h4{
+                color: var(--secondary);
+                font-weight: bold;
+        }
+    }
+    .ActivityScrollerChanger{
+        background: #F4F7FE;
+        padding: 20px 10px;
+        border-radius: var(--border-radius);
+
+    }
+    .Activitys{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 20px;
+        max-height: 200px;
+        overflow-y: scroll;
+        @include Scrollbar;
+        direction: ltr; /* Right-to-left direction */
+        gap: 1vw;
+
+        article{
+            direction: rtl; /* Right-to-left direction */
+            display: flex;
+            justify-content: space-between;
+            gap: 1vw;
+            width: 100%;
+            img{
+
+                    width: 3vw;
+                    height: 3vw;
+            }
+                h5{
+                    margin-bottom: 0;
+                    font-size: .8vw;
+                    color: #505050;
+                        @include Font_Poppins_Bold;
+                        font-weight: 600;
+                }   
+
+               
+            }
+           p{
+            font-size: .6vw;
+            text-wrap: nowrap;
+            color: #D16E57;
+           }
+        }
+    
+}
